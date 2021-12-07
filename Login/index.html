@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <form action="https://www.google.com/" class="form">
+            <input type="text" class="username" placeholder="Username" >
+                <div class="overInput">
+                    <p class="errorAcc">account doesn't exist</p>
+                    <p class="errorNotEnterUsername">first enter username</p>
+                </div>
+            <input type="password" class="password" placeholder="Password" >
+                <div class="overInput">
+                    <p class="errorPassword">invalid password</p>
+                    <p class="errorNotEnterPassword">enter password</p>
+                </div>
+                <div class="divWatchPassword">
+                    <p class="watchPassword"><input type="checkbox" class="watchPasswordCB">Show password</p>
+                </div>
+            <br>
+            <button type="submit" class="button-login" >Login</button>
+            <p class="DontHaveAcc">Don't have account? <a href="../Register/index.html">Sign up</a></p>
+        </form> 
+    </div>
+
+
+    <script src="assets/app.js"></script>
+</body>
+</html>

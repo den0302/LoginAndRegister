@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+        <div class="login">
+            <h1>Register</h1>
+            <form action="../Login/index.html" class="form">
+                
+                <input type="text" class="username" placeholder="Username">
+                    <div class="errors">
+                        <p class="enterUsername">enter username</p>
+                        <p class="accountExists">account already exists</p>
+                    </div>
+                <input type="password" class="password"  placeholder="Create password">
+                    <div class="errors">
+                        <p class="enterPassword">enter password</p>
+                        <p class="symbols8">password must be at least 8</p>
+                    </div>
+                <input type="password" class="retryPassword"  placeholder="Retry password">
+                    <div class="errors">
+                        <p class="passwordMismatch">Password mismatch. Try again</p>
+                    </div>
+                    <div class="divWatchPassword">
+                        <p class="watchPassword"><input type="checkbox" class="watchPasswordCB">Show password</p>
+                    </div>
+                <br>
+                <button type="submit" class="button-login">Register</button>
+                <p class="DontHaveAcc">Have account? <a href="../Login/index.html">Sign in</a></p>
+           </form> 
+
+        </div>
+    </div>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
