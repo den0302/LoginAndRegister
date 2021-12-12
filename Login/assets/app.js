@@ -24,7 +24,7 @@ watchPasswordCB.addEventListener("click", () => {
 form.addEventListener("submit", event => {
  
     if(username.value === "") {
-        //не відправляти на форму
+
         errorNotEnterUsername.style.display = "inline"
         event.preventDefault();
     } else if(localStorage.getItem(username.value)===null){
@@ -38,7 +38,7 @@ form.addEventListener("submit", event => {
 
 
     if(localStorage.getItem(username.value)===null){
-        //не відправляти на форму
+
         errorPassword.style.display = "none"
         event.preventDefault();
     }else if(password.value === ""){
