@@ -1,6 +1,10 @@
 body {
     background: linear-gradient(to right , rgb(0, 255, 0), rgb(0, 173, 101), rgb(139, 141, 255)), no-repeat;
     }
+
+br{
+    user-select: none;
+}
     
 .login{
     display: block;
@@ -41,6 +45,12 @@ h1{
     width: 50%;
     padding: 9px 20px;
     color: rgb(255, 255, 255);
+}
+
+.watchPassword {
+    display: inline-block;
+    margin-top: 10px;
+    user-select: none;
 }
 
 .DontHaveAcc{
