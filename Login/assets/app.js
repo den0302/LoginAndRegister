@@ -18,6 +18,7 @@ watchPasswordCB.addEventListener("click", () => {
 
 form.addEventListener("submit", event => {
     if(username.value === ""){
+        errorAcc.style.display = "none"
         errorNotEnterUsername.style.display = "inline"
         event.preventDefault()
     }else if(localStorage.getItem(username.value)===null){
