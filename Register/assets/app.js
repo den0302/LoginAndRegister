@@ -9,6 +9,27 @@ const symbols8 = document.querySelector(".symbols8")
 const passwordMismatch = document.querySelector(".passwordMismatch")
 const watchPasswordCB = document.querySelector(".watchPasswordCB")
 
+const keys = Object.keys(localStorage)
+const values = Object.values(localStorage)
+const accounts = {
+  activeUserId: 1,
+  users: {}
+}
+
+function makeUser(name, password) {
+  return {
+    name,
+    password,
+  }
+}
+
+for(let acc = 0; localStorage.length > acc; acc++){
+  accounts.users[acc] = {
+    name: keys[acc],
+    password: values[acc],
+  }
+}
+
 watchPasswordCB.addEventListener("click", () => {
   if(watchPasswordCB.checked){
     password.setAttribute("type", "text")
@@ -54,3 +75,4 @@ form.addEventListener("submit", event => {
       localStorage.setItem(username.value, password.value)
     }
 })
+console.log(accounts)
